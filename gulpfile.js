@@ -1,6 +1,15 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
+const build = require('gulp-build');
+
+
+//building site (for netlify)
+gulp.task('build', function() {
+  gulp.src('scripts/*.js')
+      .pipe(build({ GA_ID: '123456' }))
+      .pipe(gulp.dest('dist'))
+});
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
