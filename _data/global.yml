@@ -1,0 +1,9 @@
+# Site Settings
+title: 'Yoga Changemakers'
+description: 'Site by emcog.github'
+url: 'https://www.yogachangemakers.com' # the base hostname & protocol for your site
+footer_text: 'YogaChangemakers.com by Mindfulness4Change'
+
+# Admin Settings
+admin_name: 'Robin Leonad'
+admin_email: 'robin@yogachangemakers.com'

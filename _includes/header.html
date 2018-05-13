@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/{% if page.id or post.id %}Article{% else %}Organization{% endif %}" id="ie6" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/{% if page.id or post.id %}Article{% else %}Organization{% endif %}" id="ie7" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/{% if page.id or post.id %}Article{% else %}Organization{% endif %}" id="ie8" class="ie ie-old" lang="en-US"><![endif]-->
+<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/{% if page.id or post.id %}Article{% else %}Organization{% endif %}" id="ie9" class="ie" lang="en-US"><![endif]-->
+<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/{% if page.id or post.id %}Article{% else %}Organization{% endif %}" lang="en-US"><!--<![endif]-->
+<head>
+
+    <!-- Meta 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Yoga Changemakers</title>
+  	<meta name="description" content="Breath, Movement, People, Planet.">
+  	<meta name="author" content="Mindfulness4Change">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Styles 
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="{{ site.data.global.url }}/css/style.css">
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="{{ site.data.global.url }}/js/respond.min.js"></script>
+    <![endif]-->
+
+
+      <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <!-- link rel="stylesheet" href="bulma/css/bulma.css"> -->
+
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+</head>
+<body class="{{ post.title | downcase | replace:' ','-' | replace:',','' | strip_html }}{% if page.category %} category-{{ page.category }}{% endif %}{% if page.layout-class %} layout-{{ page.layout-class }}{% endif %}">
+
+    <nav id="" class="navbar has-shadow is-spaced">
+        <div class="container">
+        	<div class="navbar-brand">
+             <div class="navbar-start">
+                    {% for item in site.data.nav.main %}
+                            <a class= "navbar-item" href="{{ item.url }}">{{ item.text }}</a>
+                    {% endfor %}
+              </div>
+        	</div>
+          <!--
+          </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    {% for item in site.data.nav.main %}
+                        <li>
+                            <a href="{{ item.url }}">{{ item.text }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+      -->
+    </nav>

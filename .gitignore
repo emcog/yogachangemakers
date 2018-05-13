@@ -2,6 +2,9 @@ node_modules
 
 #Jekyll#
 _site
+.jekyll-metadata
+.sass-cache
+
 
 //OCTOCAT DEFAULTS
 
