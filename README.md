@@ -10,3 +10,9 @@ https://desiredpersona.com/disqus-comments-jekyll/
 
 Jekyll staging environment (TBD)
 https://github.com/eduardoboucas/eduardoboucas.github.io/blob/master/_posts/2017-02-22-jekyll-staging-environment.md
+
+Built with
+Bulma
+
+Hosted on
+Github pages and netlify

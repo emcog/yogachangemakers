@@ -1,4 +1,6 @@
 main:
     - { url: '/', text: 'home' }
     - { url: '/resources', text: 'resources' }
-    - { url: '/feedback', text: 'feedback' }
+   # - { url: '/feedback', text: 'feedback' }
+#resources:
+ # - { url: '/resources'text: 'meditations'}
